@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Task</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+<style>
+    header {
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+        color: darkolivegreen;
+        padding: 10px;
+        padding-bottom: 0px;
+    }
+
+    a {
+        color: black;
+        justify-content: space-between;
+        text-decoration: none;
+        padding: 5px;
+        padding-left: 100px;
+        float: right;
+        transition: 0.5s all ease;
+    }
+    nav{
+        color: antiquewhite;
+        flex-direction: row-reverse;
+    }
+
+    a:hover {
+        color: white;
+        transform: scale(1.1);
+    }
+
+    .menu-icons{
+        display: none;
+        cursor: pointer;
+    }
+    @media only screen and (max-width:600px) {
+        nav {
+            display: none;
+            width: 250px;
+            padding: 0 10px;
+            flex-direction: column;
+            position: relative;
+            left: 250px;
+            margin-top: 40px;
+        }
+        .menu-icons{
+            display: block;
+            text-align: right;
+            float: right;
+        }
+    }
+</style>
+
+<body style="background: darkgray;">
+    <div>
+        <header>
+            <h1>My Website</h1>
+        </header>
+    </div>
+
+    <div class="menu-icons">&#9776;</div>
+
+    <nav class=".media_menu_items">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Services</a>
+        <a href="#test">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="highlight">
+            <h2>About Us</h2>
+            <p>Welcome to Laravel Corps, where we strive to outshine our
+                competitors, <br>
+                while keeping our customers as our priority</p>
+        </section>
+        <hr>
+        <br> <br><br> <br>
+
+        <section id="service">
+            <h2>Our Services</h2>
+            <p>Explore our range of services designed to captivate our
+                extinguished <br> potential customers</p>
+        </section>
+        <hr>
+
+        <br> <br> <br> <br>
+
+        <section id="test">
+            <h2>Client's Testimonials</h2>
+            <p>See what our clients are saying about their experience with
+                Laravel Corps. <br> And testify that your
+                satisfaction is our priority.</p>
+        </section>
+        <hr>
+        <br> <br> <br> <br>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Email: Jamikeobikwelu.gmail.com<br>
+                Name: Jamike Obikwelu <br>
+                School: Morrtech Solutions <br>
+
+            </p>
+        </section>
+        <hr>
+    </main>
+    <br> <br> <br> <br>
+
+    <footer>
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
+
+
+    <!-- <script>
+        // $(document).ready(function() {
+        //     $(".menu-icons").click(function() {
+        //         $(".media_menu_items").css('display':'block')
+        //     });
+        // });
+    </script> -->
+    <script src="script.js"></script>
+    <script src="jquery.js"></script>
+</body>
+
+</html>
